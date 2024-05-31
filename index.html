@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report from 0527 to 0531</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 24px;
+            text-align: center;
+        }
+        p {
+            margin: 0 0 1em;
+            text-align: justify;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .english-content {
+            display: block;
+        }
+        .chinese-content {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container english-content">
+        <h1>Zhouji</h1>
+        <p>I have a fulfilling day at Suzhou North American International Senior High School. Every morning, I meet a kind and amiable Summer who teaches us. She is very kind and always plays videos that her classmates like to watch when they are almost asleep, allowing them to get up and continue listening attentively. I really enjoy her classes.</p>
+        <p>After two summer classes, we will come to our math class. During math class, we will meet Cary, who is strict and responsible towards us. When someone falls asleep, he will not hesitate to call him up. Every time I ask him a question, he will kindly answer it for me.</p>
+        <p>The school lunch is also very sumptuous, and when lucky, you may come across pizza and hamburgers.</p>
+        <p>The first class in the afternoon is Ansel's class, which is very friendly. Unless you insist on sleeping and eating during class, he may tear your face and give you a notice. Of course, you can also plead with him to help you withdraw your notice.</p>
+        <p>The most memorable lesson is Vincent's class. At first, I thought his name was Vincent, but later I found out that he was a foreign teacher and he was very strict with us. For example, when he slept, he might just give us attention without many opportunities, but it was him who watched the attention. My classmates said he used to be an American soldier. He calls us microeconomics.</p>
+        <p>Overall, I had a very good week at school.</p>
+        <button id="toggle-button-en">转到中文页面</button>
+    </div>
+
+    <div class="container chinese-content">
+        <h1>周记</h1>
+        <p>在苏州北美国际高级中学每一天我都过的很充实，每周的早晨，我都会遇见和蔼可亲的Summer给我们上课，她人特别的好，当同学们每次快睡着的时候都会放同学们喜欢看的视频，让同学们起来继续专心听课，我特别喜欢上她的课。</p>
+        <p>上完两节Summer的课，就会来到我们的数学课，数学课的话会遇见我们的Cary，他对我们严厉且负责人，当同学们有人睡着的时候会毫不犹豫的把他叫起来，每次我问他问题他都会和蔼可亲的为我解答。</p>
+        <p>学校的午餐也是非常的丰盛，运气好的时候可能会遇见披萨和汉堡包。</p>
+        <p>下午的第一节课是Ansel的课，非常的友好，除非你上课非要睡觉吃东西屡教不改的话他可能会跟你撕破脸皮给你detention，当然你也可以向他求情以帮你撤销你的detention。</p>
+        <p>印象最深的是Vincent的课，一开始我以为他叫文森特，后来才知道，原来他是外教，他对我们也是非常的严厉，比如睡觉他可能就会直接给detention，也不会很多的机会，但是吧，看detention的人就是他，听同学们说他以前是一个美国大兵。他教我们的是微观经济。</p>
+        <p>总的来说我这周在学校过得非常的不错。</p>
+        <button id="toggle-button-cn">Switch to English Page</button>
+    </div>
+
+    <script>
+        const englishContent = document.querySelector('.english-content');
+        const chineseContent = document.querySelector('.chinese-content');
+        const toggleButtonEn = document.getElementById('toggle-button-en');
+        const toggleButtonCn = document.getElementById('toggle-button-cn');
+
+        toggleButtonEn.addEventListener('click', () => {
+            englishContent.style.display = 'none';
+            chineseContent.style.display = 'block';
+        });
+
+        toggleButtonCn.addEventListener('click', () => {
+            chineseContent.style.display = 'none';
+            englishContent.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
